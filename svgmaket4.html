@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скругление углов</title>
+    <style>svg {
+        border: 1px solid #dddddd;
+      }
+      a{background: palevioletred; padding: 20px;}
+      </style>
+</head>
+<body>
+    <pre>
+        Скругление углов
+Скруглением углов прямоугольника управляют параметры rx и ry. 
+Атрибут rx задаёт скругление по горизонтали, а ry — по вертикали. 
+Если атрибут ry не задан, он будет равен rx.
+
+Пример кода:
+
+&lt;rect width="50%" height="100" rx="50" ry="20"/>
+В задании части «Рамки и фоны. Погружение» описан похожий эффект скругления углов, но с помощью CSS-свойства border-radius.
+    </pre>
+    <svg>
+        <rect width="50%" height="100" x="25%" y="25" fill="orange" />
+      </svg>
+      
+    <h2>Задачи</h2>
+    <p>Задайте прямоугольнику атрибут x равным 25%, а атрибут y — 25 пикселям.</p>
+    <h4>Было</h4>
+        &lt;svg>
+        &lt;rect width="50%" height="100" x="25%" y="25" fill="orange"/>
+        &lt;/svg>
+        <p><svg>
+            <rect width="50%" height="100" x="25%" y="25" fill="orange"/>
+          </svg></p>
+          <h4>Стало</h4>
+            <svg>
+                <rect width="50%" height="100" x="25%" y="25" rx="20" ry="50" fill="orange" />
+              </svg>
+              <p style="padding-bottom: 30px;">
+                &lt;svg>
+                &lt;rect width="50%" height="100" x="25%" y="25" rx="20" ry="50" fill="orange" />
+                &lt;/svg>
+              </p>
+          <a href="index.html" style="">На главную</a>
+        </p>
+</body>
+</html>
