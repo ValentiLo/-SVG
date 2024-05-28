@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Многоугольники</title>
+    <style>svg {
+        border: 1px solid #dddddd;
+      }
+      a{background: palevioletred; padding: 20px;}
+      </style>
+</head>
+<body>
+    <h2>Многоугольники</h2>
+ <p>
+    В SVG можно рисовать не только четырёхугольники, но и многоугольники, это делается с помощью тега polygon. Пример кода:
+ </p>
+ <p>
+    &lt;polygon points="70,5 90,41 136,48 103,80 111,126 70,105 29,126 36,80 5,48 48,41"/>
+ </p>
+ <p>
+    И результат:
+ </p>
+    <p>
+        <svg>
+          <polygon points="70,5 90,41 136,48 103,80 111,126 70,105 29,126 36,80 5,48 48,41"/>  
+        </svg>
+        
+        </p>
+      <p>В атрибуте points задаются координаты вершин фигуры. Каждая координата задаётся по x и y. Координаты в points нельзя задавать в процентах.</p>
+    <h2>Задачи</h2>
+    <p>
+        Нарисуйте многоугольник с координатами 5,135 115,5 225,135 и заливкой violet.</p>
+    <h4>Было</h4>
+    <h4>object.svg</h4>
+    &lt;svg> 
+      &lt;/svg>
+      <h4>style.css</h4>
+      <p>svg {
+        border: 1px solid #dddddd;
+      }
+      </p>
+      <h4>Надо</h4>
+          <svg>
+            <polygon points="5,135 115,5 225,135" fill="violet"/>"
+          </svg>
+            <p>
+          <a href="index.html">На главную</a></p>
+        
+</body>
+</html>
