@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Испытание: пирамиды</title>
+    <style>svg {
+        border: 1px solid #dddddd;
+      }
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Испытание: пирамиды</h2>
+ <p>
+    Нарисуйте пейзаж с пирамидами, используя <code>rect</code> и <code>polygon.</code></p>
+ <p>
+    <strong>Цвета:</strong> <span style="background-color: skyblue; color: white;">skyblue</span>, <span style="background-color: yellow; color: white;">yellow</span>, <span style="background-color: goldenrod; color: white;">goldenrod</span>, <span style="background-color: darkgoldenrod; color: white;">darkgoldenrod</span>. </p>
+ <p>
+    Все значения кратны десяти.
+ </p>
+ <p style="border: 1px solid red; padding: 10px; margin: 10px;">Не забывайте, что в SVG важно закрывать теги: например,<code>&lt;rect/></code>  или <code>&lt;rect>&lt;/rect></code>. От этого зависит, как интерпретируется код.</p>
+    <p>
+        <svg width="540" height="290">
+            <rect width="100%" height="290" fill="yellow"/>
+              <rect width="100%" height="190" fill="skyblue"/>
+            <polygon points="90,240 240,70 370,240" fill="goldenrod"/>"
+            <polygon points="350,150 440,260 255,260" fill="darkgoldenrod"/>"
+          </svg>
+        
+        </p>
+      <p>В атрибуте points задаются координаты вершин фигуры. Каждая координата задаётся по x и y. Координаты в points нельзя задавать в процентах.</p>
+    <h2>Задачи</h2>
+    <p></p>
+    <h4>Было</h4>
+    <h4>object.svg</h4>
+    <pre>
+    &lt;svg width="540" height="290"> 
+    &lt;rect width="100%" height="290" fill="yellow"/>  
+    &lt;rect width="100%" height="190" fill="skyblue"/> 
+    &lt;polygon points="90,240 240,70 370,240" fill="goldenrod"/>" 
+    &lt;polygon points="350,150 440,260 255,260" fill="darkgoldenrod"/>"
+    &lt;/svg>
+    </pre>
+    
+    <svg width="540" height="290">
+        <rect width="100%" height="290" fill="yellow"/>
+          <rect width="100%" height="190" fill="skyblue"/>
+        <polygon points="90,240 240,70 370,240" fill="goldenrod"/>"
+        <polygon points="350,150 440,260 255,260" fill="darkgoldenrod"/>"
+      </svg>
+      &lt;/svg>
+      <h4>style.css</h4>
+      <p>svg {
+        border: 1px solid #dddddd;
+      }
+      </p>
+      <h4>Надо</h4>
+      <img src="7task.png" alt="">
+          
+            <div>
+          <a href="index.html">На главную</a>
+          <a href="index.html" download="7 Испытание.doc";">Загрузить попытки</a></div>
+        
+</body>
+</html>
