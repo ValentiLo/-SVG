@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рисуем окружность</title>
+    <style>svg {
+        border: 1px solid #dddddd;
+      }
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Рисуем окружность</h2>
+ <p>
+    Окружность рисуется с помощью тега <code>circle</code>. Пример кода:</p>
+ <p>
+    <code>&lt;circle r="50"/></code><p>
+    
+ </p>
+ <svg>
+    <circle r="50" fill="blue"/>
+ </svg>
+ <p><b>Атрибут <span>r</span> — радиус окружности.</b></p>
+ <p>В отличие от предыдущих фигур, положение окружности в пространстве определяется координатами центра фигуры: атрибут <code>cx</code> задаёт положение по горизонтальной оси, <code>cy</code> — по вертикальной.</p>
+  <p>По умолчанию координаты центра окружности равны <span>0,0</span>, поэтому она находится в верхнем левом углу. Подвинем фигуру:</p>
+ <p>
+        <svg>
+            <circle r="50" cx="100" cy="50%" fill="blue"/> </svg>
+        
+        </p>
+        <h4>Код</h4>
+            <code>
+                &lt;svg>
+                &lt;circle r="50" cx="100" cy="50%" fill="blue"/> &lt;/svg>
+            </code>
+        
+
+
+
+        <p>Значения можно задавать как в пикселях, так и в процентах. Процентные значения рассчитываются относительно размеров SVG-элемента.</p>
+    <p>
+        Радиус и координаты можно задавать только атрибутами, с помощью CSS это сделать нельзя.
+    </p>
+      <h2>Задачи</h2>
+    <p>Нарисуйте окружность с радиусом 10 и центром по горизонтали (cx) равным 50, по вертикали (cy) — 50%, цвет заливки — crimson.
+Вторую окружность: радиус — 30, cx = 105, cy = 50%, цвет заливки — orangered.
+Третью: радиус — 50, cx = 200 и cy = 50%, цвет заливки — gold</p>
+    <h4>Код</h4>
+    <h4>object.svg</h4>
+    <pre>
+            &lt;svg>
+            &lt;circle r="10" cx="50" cy="50%" fill="crimson"/>
+            &lt;circle r="30" cx="105" cy="50%" fill="orangered"/>
+            &lt;circle r="50" cx="200" cy="50%" fill="gold"/>
+            &lt;/svg>
+    </pre>
+    <h4>Результат</h4>
+    <svg>
+        <circle r="10" cx="50" cy="50%" fill="crimson"/>
+        <circle r="30" cx="105" cy="50%" fill="orangered"/>
+        <circle r="50" cx="200" cy="50%" fill="gold"/>
+      </svg>
+    
+      <h4>style.css</h4>
+      <p>svg {
+        border: 1px solid #dddddd;
+      }
+      </p>
+      
+          
+            <div>
+          <a href="index.html">На главную</a>
+          </div>
+        
+</body>
+</html>
