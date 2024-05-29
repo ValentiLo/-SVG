@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отсутствие заливки</title>
+    <style>svg {
+        border: 1px solid #dddddd;}
+        .shape-opacity{ fill: yellowgreen; }
+        .shape-opacity1 {
+        fill: yellowgreen;
+        fill-opacity: 0.75;
+        }
+        .shape-transparent {
+        fill: none
+        }
+
+    
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Отсутствие заливки</h2>
+ <p>
+    Иногда бывает нужно полностью убрать заливку, например, если вам нужен только контур фигуры. Это можно сделать ключевым словом <code>none</code>, результатом будет полная прозрачность фигуры.
+</p>
+    
+<img src="3otask.png" alt="">
+
+
+
+<h2>Задачи</h2>
+  <ul>
+    <li>
+        <p>Задайте первой фигуре отсутствие заливки с помощью <code>fill="none"</code>.</p>
+        </li>
+    <li>
+        <p>Сделайте то же самое для третьей фигуры, но через CSS, используя <code>fill: none</code>.</p>
+        </li>
+    
+  </ul>
+    <h4>Было</h4>
+    <h4>object.svg</h4>
+    <pre>
+        &lt;svg width="300" height="150">
+
+        &lt;circle r="60" cx="75" cy="50%"></circle>
+          
+        &lt;circle r="60" cx="150" cy="50%" fill="hsla(50, 100%, 50%, 0.75)"></circle>
+          
+        &lt;circle class="shape-transparent" r="60" cx="225" cy="50%"></circle>
+          
+        &lt;/svg>
+    </pre>
+      <h4>style.css</h4>
+      <p>svg {
+        border: 1px solid #dddddd;
+      }
+      </p>
+      <p>
+        .shape-transparent {
+
+        }
+      </p>
+      <svg width="300" height="150">
+
+        <circle r="60" cx="75" cy="50%"></circle>
+      
+        <circle r="60" cx="150" cy="50%" fill="hsla(50, 100%, 50%, 0.75)"></circle>
+      
+        <circle class="shape-transparent1" r="60" cx="225" cy="50%"></circle>
+      
+      </svg>
+      <h4>Надо</h4>
+      <svg width="300" height="150">
+
+        <circle r="60" cx="75" cy="50%" fill="none"></circle>
+      
+        <circle r="60" cx="150" cy="50%" fill="hsla(50, 100%, 50%, 0.75)"></circle>
+      
+        <circle class="shape-transparent" r="60" cx="225" cy="50%"></circle>
+      
+      </svg>
+
+
+      <h3>Код</h3>
+      <p>
+        <p><code>&lt;svg width="300" height="150"></code></p>
+        <p><code>&lt;circle r="60" cx="75" cy="50%" fill="none">&lt;/circle></code></p>
+        <p><code>&lt;circle r="60" cx="150" cy="50%" fill="hsla(50, 100%, 50%, 0.75)">&lt;/circle></code></p>
+        <p><code>&lt;circle class="shape-transparent" r="60" cx="225" cy="50%">&lt;/circle></code></p>
+        <p><code>&lt;/svg></code></p>
+          </p>
+            <div>
+          <a href="index.html">На главную</a>
+          
+         </div>
+        
+</body>
+</html>
