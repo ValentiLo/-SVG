@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рисуем ломаные линии</title>
+    <style>svg {
+        border: 1px solid #dddddd;
+      }
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Рисуем ломаные линии</h2>
+ <p>
+    Линии рисуются с помощью тега <span>polyline</span>. 
+    Координаты точек на линии задаются в атрибуте <code>points</code>, 
+    , как для <code>polygon</code>. 
+    Координаты можно задавать в процентах.</p>
+    <p>Пример кода:</p>
+ <p>
+    <code>&lt;polyline points="10,135 100,10 55,135 10,10 105,135 stroke="red" stroke-width="5" fill="none""/></code>
+ </p>
+<p>Результат:</p>
+    
+ <svg>
+    <polyline points="10,135 100,10 55,135 10,10 105,135" stroke="red" stroke-width="5" fill="none"/>
+</svg>
+ <p>Разница между <code>polygon</code> и <code>polyline</code> заключается в поведении обводки: у многоугольника обводка замыкается сама по себе (левая фигура),
+     а у ломаной линии — остаётся незамкнутой (фигура справа):</p>  
+    
+<img src="14task.png" alt="">
+
+
+
+  <h2>Задачи</h2>
+  
+    <p>Нарисуйте линию с координатами <span>50,180 100,20 150,180 20,80 180,80 50,180 100,20</span>.
+        Добавьте ей обводку цвета <span style="background: red; color: white;">red</span> толщиной <span>5</span> пикселей. 
+        Чтобы убрать чёрную заливку, задайте атрибуту <code>fill</code> значение <code>none</code>.</p>   
+    <h4>Было</h4>
+    <h4>object.svg</h4>
+    <pre>
+        &lt;svg width="200" height="200">
+        &lt;/svg>
+    </pre>
+      <h4>style.css</h4>
+      <p>svg {
+        border: 1px solid #dddddd;
+      }
+      </p>
+      <h4>Надо</h4>
+      <svg width="200" height="200">
+        <polyline points="50,180 100,20 150,180 20,80 180,80 50,180 100,20" stroke="red" stroke-width="5" fill="none"/>
+      </svg>
+      <h3>Код</h3>
+      <p>
+      <code>
+        &lt;svg width="200" height="200">
+        &lt;polyline points="50,180 100,20 150,180 20,80 180,80 50,180 100,20" stroke="red" stroke-width="5" fill="none"/>
+        &lt;/svg>
+    </code>
+          </p>
+            <div>
+          <a href="index.html">На главную</a>
+         </div>
+        
+</body>
+</html>
