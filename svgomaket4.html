@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Испытание: разноцветные квадраты</title>
+    <style>
+        /* Используемые цвета:
+  tomato, lightseagreen, #ffd700
+*/
+svg {
+  border: 1px solid #dddddd;
+}
+
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Испытание: разноцветные квадраты</h2>
+ <p>
+    Раскрасьте квадраты, используя цвета 
+    <span style="background: tomato; color: white;">tomato</span>,
+     <span style="background: lightseagreen; color: white;">lightseagreen</span>,
+     <span style="background: #ffd700;">#ffd700</span>
+</p>
+    
+
+
+    <h4>Было</h4>
+    <h4>object.svg</h4>
+    <pre>
+        &lt;svg width="290" height="290">
+
+        &lt;rect class="rect-1" width="42.5%" height="42.5%" x="5%" y="5%">&lt;/rect>
+          
+        &lt;rect class="rect-2" width="42.5%" height="42.5%" x="52.5%" y="5%">&lt;/rect>
+          
+        &lt;rect class="rect-3" width="42.5%" height="42.5%" x="5%" y="52.5%">&lt;/rect>
+        &lt;rect class="rect-4" width="42.5%" height="42.5%" x="52.5%" y="52.5%"></rect>
+          
+        &lt;/svg>
+    </pre>
+      <h4>style.css</h4>
+      <p>svg {
+        border: 1px solid #dddddd;
+      }
+      </p>
+      <svg width="290" height="290">
+
+        <rect class="rect-1" width="42.5%" height="42.5%" x="5%" y="5%"></rect>
+          
+        <rect class="rect-2" width="42.5%" height="42.5%" x="52.5%" y="5%"></rect>
+          
+        <rect class="rect-3" width="42.5%" height="42.5%" x="5%" y="52.5%"></rect>
+        <rect class="rect-4" width="42.5%" height="42.5%" x="52.5%" y="52.5%">
+          
+        </svg>
+      <h4>Надо</h4>
+      <img src="4otask.png" alt="">
+
+      <svg width="290" height="290">
+      </svg>
+
+
+      <h3>Код</h3>
+      <p>
+       <p><code>&lt;svg width="290" height="290"></code></p>
+        <p><code>&lt;rect class="rect-1" width="42.5%" height="42.5%" x="5%" y="5%">&lt;/rect></code></p>
+        <p><code>&lt;rect class="rect-2" width="42.5%" height="42.5%" x="52.5%" y="5%">&lt;/rect></code></p>
+        <p><code>&lt;rect class="rect-3" width="42.5%" height="42.5%" x="5%" y="52.5%">&lt;/rect></code></p>
+        <p><code>&lt;rect class="rect-4" width="42.5%" height="42.5%" x="52.5%" y="52.5%">&lt;/rect></code></p>
+        <p><code>&lt;/svg></code></p> 
+          </p>
+          <h3>style.css</h3>
+      <p><code>svg {
+        border: 1px solid #dddddd;
+      }</code>
+    </p>
+      <p><code>.rect-1{fill: tomato}</code></p>
+      <p><code>.rect-2{fill: lightseagreen; fill-opacity: 0.5;}</code></p>
+      <p><code>.rect-3{fill: #ffd700}</code></p>
+      <p><code>.rect-4{fill: none}</code></p>
+
+
+
+
+
+
+            <div>
+          <a href="index.html">На главную</a>
+          
+         </div>
+        
+</body>
+</html>

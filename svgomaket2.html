@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прозрачность заливки</title>
+    <style>svg {
+        border: 1px solid #dddddd;}
+        .shape-opacity{ fill: yellowgreen; }
+        .shape-opacity1 {
+        fill: yellowgreen;
+        fill-opacity: 0.75;
+}
+
+    
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Прозрачность заливки</h2>
+ <p>
+    Управлять прозрачностью заливки можно с помощью свойства fill-opacity. Прозрачность также можно задавать как атрибутом, так и через CSS.</p>
+    <p>Значение задаётся числом от 0 до 1, например: 
+    </p>
+ <p><code>&lt;rect width="150" height="100" fill="gold" fill-opacity="0.5">&lt;/rect></code></p>
+    
+<p><code>rect {</code></p>
+<p><code>fill: gold;</code></p>
+<p><code>fill-opacity: 0.5;</code></p>
+<p><code>}</code></p>
+<p>Прозрачность работает для всех видов заливок, в том числе для градиентов и паттернов:</p>
+
+<img src="1otask.png" alt="">
+
+
+
+<h2>Задачи</h2>
+  <ul>
+    <li>
+        <p>Задайте первой фигуре прозрачность с помощью атрибута<code>fill-opacity="0.5"
+        </code>.</p>
+        </li>
+    <li>
+        <p>Задайте третьей фигуре прозрачность с помощью CSS <code>fill-opacity: 0.75</code>.</p>
+        </li>
+    
+  </ul>
+    <h4>Было</h4>
+    <h4>object.svg</h4>
+    <pre>
+        &lt;svg width="300" height="150">
+            &lt;circle r="60" cx="75" cy="50%" fill="#ff7700>&lt;/circle>
+          
+            &lt;circle r="60" cx="150" cy="50%"  fill="hsla(50, 100%, 50%, 0.5)>&lt;/circle>
+          
+            &lt;circle class="shape-opacity" r="60" cx="225" cy="50%">&lt;/circle>
+        &lt;/svg>
+    </pre>
+      <h4>style.css</h4>
+      <p>svg {
+        border: 1px solid #dddddd;
+      }
+      </p>
+      <p>
+        .shape-opacity{
+            fill: yellowgreen;
+          }
+      </p>
+      <svg width="300" height="150">
+
+        <circle r="60" cx="75" cy="50%" fill="#ff7700"></circle>
+      
+        <circle r="60" cx="150" cy="50%" fill="hsla(50, 100%, 50%, 0.75)"></circle>
+      
+        <circle class="shape-opacity" r="60" cx="225" cy="50%"></circle>
+      
+      </svg>
+      <h4>Надо</h4>
+      <svg width="300" height="150">
+
+        <circle r="60" cx="75" cy="50%" fill="#ff7700" fill-opacity="0.5"></circle>
+      
+        <circle r="60" cx="150" cy="50%" fill="hsla(50, 100%, 50%, 0.5)"></circle>
+      
+        <circle class="shape-opacity1" r="60" cx="225" cy="50%"></circle>
+      
+      </svg>
+
+
+      <h3>Код</h3>
+      <p>
+        <p><code>&lt;svg width="300" height="150"></code></p>
+        <p><code>&lt;circle r="60" cx="75" cy="50%" fill="#ff7700" fill-opacity="0.5>&lt;/circle></code></p>
+        <p><code>&lt;circle r="60" cx="150" cy="50%" fill="hsla(50, 100%, 50%, 0.5)">&lt;/circle></code></p>
+        <p><code>&lt;circle class="shape-opacity1" r="60" cx="225" cy="50%">&lt;/circle></code></p>
+        <p><code>&lt;/svg></code></p>
+          </p>
+            <div>
+          <a href="index.html">На главную</a>
+          
+         </div>
+        
+</body>
+</html>
