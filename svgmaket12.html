@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рисуем линии</title>
+    <style>svg {
+        border: 1px solid #dddddd;
+      }
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Рисуем линии</h2>
+ <p>
+    Линии рисуются с помощью тега <span>line</span>. 
+    Координаты начала линии задаются атрибутами <code>x1</code> и <code>y1</code>, 
+    координаты конца — атрибутами <code>x2</code> и <code>y2</code>. 
+    Координаты можно задавать в процентах.</p>
+    <p>Пример кода:</p>
+ <p>
+    <code>&lt;line x1="220" y1="10" x2="20" y2="130"/></code>
+ </p>
+ <p>Так как линия не образует фигуру с внутренним контуром, 
+    для отображения ей нужно задать не заливку, а обводку. 
+    Обводкой управляют два атрибута: <code>stroke</code> и <code>stroke-width</code>. 
+    Атрибут <code>stroke</code> задаёт цвет обводки, 
+    <code>stroke-width</code> — толщину линии.</p>
+<p>
+    &lt;line x1="220" y1="20" x2="20" y2="90" stroke="violet" stroke-width="5" />
+</p>
+
+<p>Результат:</p>
+    
+ <svg>
+    <line x1="220" y1="20" x2="20" y2="90" stroke="violet" stroke-width="5" />
+ </svg>
+ <p>Можно задать только цвет линии, тогда толщина обводки по умолчанию будет равна одному пикселю.</p>
+   
+    
+  <h2>Задачи</h2>
+  
+    <p>Нарисуйте линию оранжевого цвета <span style="background: orange;">orange</span> толщиной <span>10</span> пикселей с началом в точке <span>(20,20)</span> и концом в точке <span>(200,100)</span></p>
+       
+    <h4>Было</h4>
+    <h4>object.svg</h4>
+    <pre>
+        &lt;svg width="220" height="120">
+        &lt;/svg>
+    </pre>
+      <h4>style.css</h4>
+      <p>svg {
+        border: 1px solid #dddddd;
+      }
+      </p>
+      <h4>Надо</h4>
+      <svg width="220" height="120">
+        <line x1="20" y1="20" x2="200" y2="100" stroke="orange" stroke-width="10"/>
+      </svg>
+      <h3>Код</h3>
+      <p>
+      <code>
+        &lt;svg width="220" height="120">
+        &lt;line x1="20" y1="20" x2="200" y2="100" stroke="orange" stroke-width="10"/>
+        &lt;/svg>
+    </code>
+          </p>
+            <div>
+          <a href="index.html">На главную</a>
+         </div>
+        
+</body>
+</html>
