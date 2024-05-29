@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заливки</title>
+    <style>svg {
+        border: 1px solid #dddddd;
+      }
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Заливки</h2>
+ <p>
+    SVG-фигуры имеют богатые возможности оформления: им, как и HTML-элементам, можно задавать заливку цветом, градиентом или картинкой, но помимо этого также можно управлять отдельно прозрачностью заливки и обводки, а в качестве заливки можно использовать, например, текст.</p>
+    <p>Также интересные возможности имеет обводка. Например, можно управлять видом пунктирной обводки и сделать обводку точками, пунктиром или морзянкой, а ещё обводку можно сделать не только цветом, но также градиентом или картинкой.</p>
+ <p>
+    Начнём с заливки. Если она не задана, по умолчанию фигура заполняется чёрным цветом:</p>
+<p>
+    <code>&lt;circle r="60" cx="150" cy="50%">&lt;/circle></code>
+</p>
+
+<p>Результат:</p>
+    
+ <svg>
+    <circle r="60" cx="150" cy="50%"></circle> 
+</svg>
+<p>Цвет заливки задаётся атрибутом <code>fill:</code></p>
+<p>
+    <code>&lt;circle r="60" cx="150" cy="50%" fill="gold">&lt;/circle></code>
+</p>
+<p>либо аналогичным свойством в CSS:</p>
+<p>
+   <span>circle {</span>
+    <p><code>fill: gold;</code></p>
+        
+     <span>}</span> 
+</p>
+<p>Результат будет одинаковым:</p>
+<p>
+    <svg>
+        <circle r="60" cx="150" cy="50%" fill="gold"></circle>
+    </svg>
+</p>
+<p>Цвет можно задавать в любом удобном формате.</p>
+
+<h2>Задачи</h2>
+  <ul>
+    <li>
+        <p>Первой фигуре задайте заливку атрибутом в формате <code>HEX fill="#ff7700"</code></p>
+        </li>
+    <li>
+        <p>Второй — атрибутом в формате <code>HSLA fill="hsla(50, 100%, 50%, 0.75)"</code>.</p>
+        </li>
+    <li>
+        <p>  Третьей фигуре задайте заливку именованным цветом <code>fill</code>: <span style="background: yellowgreen;">yellowgreen</span> в редакторе CSS. 
+   </p>
+       </li>
+  </ul>
+    <h4>Было</h4>
+    <h4>object.svg</h4>
+    <pre>
+        &lt;svg width="300" height="150">
+            &lt;circle r="60" cx="75" cy="50%">&lt;/circle>
+          
+            &lt;circle r="60" cx="150" cy="50%">&lt;/circle>
+          
+            &lt;circle class="shape-fill" r="60" cx="225" cy="50%">&lt;/circle>
+        &lt;/svg>
+    </pre>
+      <h4>style.css</h4>
+      <p>svg {
+        border: 1px solid #dddddd;
+      }
+      </p>
+      <p>
+        .shape-fill {
+
+        }
+      </p>
+      <svg width="300" height="150">
+
+        <circle r="60" cx="75" cy="50%"></circle>
+      
+        <circle r="60" cx="150" cy="50%"></circle>
+      
+        <circle class="shape-fill" r="60" cx="225" cy="50%"></circle>
+      
+      </svg>
+      <h4>Надо</h4>
+      <svg width="300" height="150">
+
+        <circle r="60" cx="75" cy="50%" fill="#ff7700"></circle>
+      
+        <circle r="60" cx="150" cy="50%" fill="hsla(50, 100%, 50%, 0.75)"></circle>
+      
+        <circle class="shape-fill" r="60" cx="225" cy="50%"></circle>
+      
+      </svg>
+      <h3>Код</h3>
+      <p>
+        <p><code>&lt;svg width="300" height="150"></code></p>
+        <p><code>&lt;circle r="60" cx="75" cy="50%" fill="#ff7700">&lt;/circle></code></p>
+        <p><code>&lt;circle r="60" cx="150" cy="50%" fill="hsla(50, 100%, 50%, 0.75)">&lt;/circle></code></p>
+        <p><code>&lt;circle class="shape-fill" r="60" cx="225" cy="50%">&lt;/circle></code></p>
+        <p><code>&lt;/svg></code></p>
+          </p>
+            <div>
+          <a href="index.html">На главную</a>
+          
+         </div>
+        
+</body>
+</html>
