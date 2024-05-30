@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прозрачность обводки</title>
+    <style>svg {
+        border: 1px solid #dddddd;}
+        .shape-stroke {
+     stroke-opacity: 0.5;
+    }
+
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Прозрачность обводки</h2>
+ <p>
+    Прозрачность задаётся свойством <code>stroke-opacity</code>со значениями от <code>0</code> до <code>1</code>, например: <code>stroke-opacity="0.5"</code>.    </p>
+<img src="7otask.png" alt="">
+    <p>либо через CSS:</p>
+ <p><code>rect {
+    </code>
+    <p><code>stroke: orange;</code></p>
+    <p><span style="background: yellow;">stroke-opacity: 0.5;</span></p>
+ 
+  <code>}</code></p>
+   
+<h2>Задачи</h2>
+  <ul>
+    <li>
+        <p>С помощью атрибута задайте первой фигуре прозрачность обводки со значением<code>0.6</code>,
+        </p>
+        </li>
+    <li>
+        <p>а второй фигуре — со значением<code>stroke-width: 5%</code>.</p>
+        </li>
+    <p>
+    <li>
+        В CSS третьей фигуре задайте прозрачность обводки <code>0.5</code>.
+    </li>
+</p>
+  </ul>
+   <h4>Было</h4>
+    <h4>object.svg</h4>
+    <pre>
+        &lt;svg width="300" height="150">
+        &lt;circle r="50" cx="75" cy="75" fill="none" stroke="darkorange" stroke-width="40">&lt;/circle>
+        &lt;circle r="50" cx="150" cy="75" fill="none" stroke="gold" stroke-width="40">&lt;/circle>
+        &lt;circle class="shape-stroke" r="50" cx="225" cy="75" fill="none" stroke="lightseagreen" stroke-width="40">&lt;/circle>
+        &lt;/svg>
+    </pre>
+      <h4>style.css</h4>
+      <p><code>svg {
+        border: 1px solid #dddddd;
+      }</code>
+      </p>
+      
+      <svg width="300" height="150">
+
+        <circle r="50" cx="75" cy="75" fill="none" stroke="darkorange" stroke-width="40"></circle>
+      
+        <circle r="50" cx="150" cy="75" fill="none" stroke="gold" stroke-width="40"></circle>
+      
+        <circle class="shape-stroke1" r="50" cx="225" cy="75" fill="none" stroke="lightseagreen" stroke-width="40"></circle>
+      
+      </svg>
+      <h4>Надо</h4>
+      <svg width="300" height="150">
+
+        <circle r="50" cx="75" cy="75" fill="none" stroke="darkorange" stroke-width="40" stroke-opacity="0.7"></circle>
+      
+        <circle r="50" cx="150" cy="75" fill="none" stroke="gold" stroke-width="40" stroke-opacity="0.6"></circle>
+      
+        <circle class="shape-stroke" r="50" cx="225" cy="75" fill="none" stroke="lightseagreen" stroke-width="40"></circle>
+      
+      </svg>
+      
+
+
+      <h3>Код</h3>
+      <p>
+        <p><code>&lt;svg width="300" height="150"></code></p>
+        <p><code>&lt;circle r="50" cx="75" cy="75" fill="none" stroke="darkorange" stroke-width="40" stroke-opacity="0.7">&lt;/circle></code></p>
+        <p><code>&lt;circle r="50" cx="150" cy="75" fill="none" stroke="gold" stroke-width="40" stroke-opacity="0.6">&lt;/circle></code></p>
+        <p><code>&lt;circle class="shape-stroke" r="50" cx="225" cy="75" fill="none" stroke="lightseagreen" stroke-width="40">&lt;/circle></code></p>
+        <p><code>&lt;/svg></code></p>
+          </p>
+          <h3>style.css</h3>
+          <p><code>svg {
+            border: 1px solid #dddddd;
+          }</code>
+          </p>
+          <p><code>.shape-stroke {</code>
+            <p><code>stroke-opacity: 0.5;</code></p> 
+            <p><code>}</code></p>
+            
+          </p>
+            <div>
+          <a href="index.html">На главную</a>
+          
+         </div>
+        
+</body>
+</html>
