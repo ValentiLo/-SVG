@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Испытание: толщина и прозрачность обводки</title>
+    <style>
+        /* Используемые цвета:
+  yellowgreen, gold, lightseagreen
+*/
+svg {
+  border: 1px solid #dddddd;
+}
+
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Испытание: толщина и прозрачность обводки</h2>
+ <p>
+    <i>Отключите у фигур заливки</i> и добавьте им обводки, используя цвета
+    <span style="background: yellowgreen; color: white;">yellowgreen</span>,
+     <span style="background: gold; color: white;">gold</span>,
+     <span style="background: lightseagreen;">lightseagreen</span>
+</p>
+    <p>Все значения ширины обводки кратны <span>5</span>.</p>
+
+
+    <h4>Было</h4>
+    <h4>object.svg</h4>
+    <pre>
+        &lt;svg width="320" height="180">
+        &lt;polygon points="90.711 20 161.421 90.711 90.711 161.421 20 90.711">&lt;/polygon>          
+        &lt;polygon points="150.711 20 221.421 90.711 150.711 161.421 80 90.711">&lt;/polygon>
+        &lt;polygon points="210.711 20 281.421 90.711 210.711 161.421 140 90.711">&lt;/polygon>        
+        &lt;/svg>
+    </pre>
+      <h4>style.css</h4>
+      <p>/* Используемые цвета:
+        yellowgreen, gold, lightseagreen
+      */</p>
+      <p>svg {
+        border: 1px solid #dddddd;
+      }
+      </p>
+      <svg width="320" height="180">
+
+        <polygon points="90.711 20 161.421 90.711 90.711 161.421 20 90.711"></polygon>
+      
+        <polygon points="150.711 20 221.421 90.711 150.711 161.421 80 90.711"></polygon>
+      
+        <polygon points="210.711 20 281.421 90.711 210.711 161.421 140 90.711"></polygon>
+      
+      </svg>
+      
+      <h4>Надо</h4>
+      <svg width="320" height="180">
+
+        <polygon points="90.711 20 161.421 90.711 90.711 161.421 20 90.711" fill="none" stroke="yellowgreen" stroke-width="5"></polygon>
+      
+        <polygon points="150.711 20 221.421 90.711 150.711 161.421 80 90.711" fill="none" stroke="gold" stroke-width="10"></polygon>
+      
+        <polygon points="210.711 20 281.421 90.711 210.711 161.421 140 90.711" fill="none" stroke="lightseagreen" stroke-width="30" stroke-opacity="0.5"></polygon>
+      
+      </svg>
+      
+
+
+      <h3>Код</h3>
+      <p>
+       <p><code>&lt;svg width="290" height="290"></code></p>
+        <p><code>&lt;polygon points="90.711 20 161.421 90.711 90.711 161.421 20 90.711" fill="none" stroke="yellowgreen" stroke-width="5">&lt;/polygon></code></p>
+        <p><code>&lt;polygon points="150.711 20 221.421 90.711 150.711 161.421 80 90.711" fill="none" stroke="gold" stroke-width="10">&lt;/polygon></code></p>
+        <p><code>&lt;polygon points="210.711 20 281.421 90.711 210.711 161.421 140 90.711" fill="none" stroke="lightseagreen" stroke-width="30" stroke-opacity="0.5"&lt;/polygon></code></p>
+        <p><code>&lt;/svg></code></p> 
+          </p>
+          <h3>style.css</h3>
+      <p><code>svg {
+        border: 1px solid #dddddd;
+      }</code>
+    </p>
+                 <div>
+          <a href="index.html">На главную</a>
+          
+         </div>
+        
+</body>
+</html>
