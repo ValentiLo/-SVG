@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Концы линий</title>
+    <style>svg {
+        border: 1px solid #dddddd;}
+        .shape-linejoin {
+  stroke-linejoin: bevel;
+}
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Вид сгибов</h2>
+ <p>
+    Атрибут <code>stroke-linejoin</code>позволяет управлять видом обводки на сгибах линий.</p>
+<p>Аналогично прошлому заданию мы добавили «воображаемую» светлую линию в примеры. Итак, возможные значения <code>stroke-linejoin:</code></p>
+    <ol>
+        <li><p><code>miter</code>— значение по умолчанию. 
+            Обводка в месте сгиба линии никак не видоизменяется.</p>
+            <img src="101otask.png" alt=""></li>
+        <li><p><code>round</code>, обводка в месте сгиба линии равномерно закругляется.</p><img src="102otask.png" alt=""></li>
+        <li><p><code>bevel</code>, обводка в месте сгиба линии складывается как лента.</p><img src="103otask.png" alt=""></li>
+    <p>В CSS внешним видом обводки на сгибах линий можно управлять с помощью аналогичного свойства <code>stroke-linejoin</code>.</p>
+<h2>Задачи</h2>
+  <ul>
+    <li>
+        <p>Задайте второй линии атрибут<code>stroke-linejoin="round"</code>.
+        </p>
+        </li>
+    <li>
+        <p>В CSS третьей линии задайте свойство<code>stroke-linejoin</code>со значением <code>bevel.</code>.</p>
+        </li>
+  </ul>
+   <!-- <h4>Было</h4>
+    <h4>object.svg</h4>
+    <pre>
+        &lt;svg width="300" height="300">
+        &lt;line x1="40" y1="50" x2="260" y2="50" stroke-width="50" stroke="tomato" stroke-linecap="butt"> &lt;/line>
+        &lt;line x1="40" y1="150" x2="260" y2="150" stroke-width="50" stroke="gold"> &lt;/line>
+        &lt;line class="shape-linecap" x1="40" y1="250" x2="260" y2="250" stroke-width="50" stroke="lightseagreen"> &lt;/line>
+        &lt;/svg>
+    </pre>
+      <h4>style.css</h4>
+      <p><code>svg {
+        border: 1px solid #dddddd;
+      }</code>
+      </p> -->
+      <svg width="300" height="400">
+
+        <polyline points="40,150 150,40 260,150" fill="none" stroke-width="40" stroke="tomato" stroke-linejoin="miter"></polyline>
+      
+        <polyline points="40,260 150,150 260,260" fill="none" stroke-width="40" stroke="gold"></polyline>
+      
+        <polyline class="shape-linejoin1" points="40,370 150,260 260,370" fill="none" stroke-width="40" stroke="lightseagreen"></polyline>
+      
+      </svg>
+            <h4>Надо</h4>
+            <svg width="300" height="400">
+
+                <polyline points="40,150 150,40 260,150" fill="none" stroke-width="40" stroke="tomato" stroke-linejoin="miter"></polyline>
+              
+                <polyline points="40,260 150,150 260,260" fill="none" stroke-width="40" stroke="gold" stroke-linejoin="round"></polyline>
+              
+                <polyline class="shape-linejoin" points="40,370 150,260 260,370" fill="none" stroke-width="40" stroke="lightseagreen"></polyline>
+              
+              </svg> 
+            <h3>Код</h3>
+      <!-- <p>
+        <p><code>&lt;svg width="300" height="300"></code></p>
+        <p><code>&lt;line x1="40" y1="50" x2="260" y2="50" stroke-width="50" stroke="tomato" stroke-linecap="butt">&lt;/line></code></p>
+        <p><code>&lt;line x1="40" y1="150" x2="260" y2="150" stroke-width="50" stroke="gold" stroke-linecap="round">&lt;/line></code></p>
+        <p><code>&lt;line class="shape-linecap" x1="40" y1="250" x2="260" y2="250" stroke-width="50" stroke="lightseagreen">&lt;/line></code></p>
+        <p><code>&lt;/svg></code></p>
+          </p>
+          <h3>style.css</h3>
+          <p><code>svg {
+            border: 1px solid #dddddd;
+          }</code>
+          </p>
+          <p><code>.shape-linecap{</code>
+            <p><code> stroke-linecap: square</code></p> 
+            <p><code>}</code></p>
+            
+          </p> -->
+            <div>
+          <a href="index.html">На главную</a>
+          
+         </div>
+        
+</body>
+</html>
