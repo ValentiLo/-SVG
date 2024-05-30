@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Толщина обводки</title>
+    <style>svg {
+        border: 1px solid #dddddd;}
+        .shape-stroke1 {
+  fill: lightseagreen;}
+.shape-stroke1-width {
+  fill: lightseagreen;
+  stroke: teal;
+}
+.shape-stroke-width {
+  fill: lightseagreen;
+  stroke: teal;
+  stroke-width: 5%
+}
+
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Толщина обводки</h2>
+ <p>
+    Для однопиксельной обводки достаточно задать только цвет в <code>stroke</code>. Если же нужно управлять толщиной обводки, это делается с помощью свойства <code>stroke-width</code>, также атрибутом или через CSS:
+    </p>
+    <p><code>&lt;circle r="60" cx="150" cy="50%" fill="none" stroke="orange"<span style="background: yellow;">stroke-width="5"</span>>&lt;/circle></code>
+    </p>
+    <p>либо через CSS:</p>
+ <p><code>circle {
+    
+  </code><p><code>stroke: orange;</p><p></code><span style="background: yellow;">stroke-width: 5;</span></p>
+  <code>}</code></p>
+    
+<p>Результат будет одинаковым, у фигуры появится обводка толщиной 5 пикселей:</p>
+<svg><circle r="60" cx="150" cy="50%" fill="none" stroke="orange"
+    stroke-width="5"></circle></svg>
+<p>Короткой записи нет, поэтому цвет и толщина всегда задаются отдельно.</p>
+<p>Если задавать значение в процентах, они будут рассчитываться не от размеров фигуры, а относительно размеров всего SVG, что может давать непредсказуемый результат.</p>
+<p>Если обводке задана толщина, но не задан цвет, обводка не отобразится.</p>
+
+
+<h2>Задачи</h2>
+  <ul>
+    <li>
+        <p>Задайте первой фигуре толщину обводки с помощью атрибута <code>stroke-width="3"
+        </code>.</p>
+        </li>
+    <li>
+        <p>Задайте второй фигуре толщину обводки через CSS<code>stroke-width: 5%</code>.</p>
+        </li>
+    
+  </ul>
+  <p>Обратите внимание, что, в отличие от HTML, рамка не влияет на положение фигуры в пространстве или на её размеры.</p>
+    <h4>Было</h4>
+    <h4>object.svg</h4>
+    <pre>
+        &lt;svg width="300" height="150">
+        &lt;circle r="60" cx="75" cy="50%" fill="gold" stroke="darkorange">&lt;/circle>
+        &lt;circle class="shape-stroke-width" r="60" cx="225" cy="50%">&lt;/circle>
+        &lt;/svg>
+    </pre>
+      <h4>style.css</h4>
+      <p><code>svg {
+        border: 1px solid #dddddd;
+      }</code>
+      </p>
+      <p><code>.shape-stroke-width {
+            fill: lightseagreen;
+            stroke: teal;
+          }</code>
+        
+      </p>
+      <svg width="300" height="150">
+
+        <circle r="60" cx="75" cy="50%" fill="gold" stroke="darkorange"></circle>></circle>
+      
+        <circle class="shape-stroke1-width" r="60" cx="225" cy="50%"></circle>
+      
+      </svg>
+      <h4>Надо</h4>
+      <svg width="300" height="150">
+
+        <circle r="60" cx="75" cy="50%" fill="gold" stroke="darkorange" stroke-width="3"></circle>
+      
+        <circle class="shape-stroke-width" r="60" cx="225" cy="50%"></circle>
+      
+      </svg>
+
+
+      <h3>Код</h3>
+      <p>
+        <p><code>&lt;svg width="300" height="150"></code></p>
+        <p><code>&lt;circle r="60" cx="75" cy="50%" fill="gold" stroke="darkorange" stroke-width="3">&lt;/circle></code></p>
+        <p><code>&lt;circle class="shape-stroke" r="60" cx="225" cy="50%">&lt;/circle></code></p>
+        <p><code>&lt;/svg></code></p>
+          </p>
+          <h3>style.css</h3>
+          <p><code>svg {
+            border: 1px solid #dddddd;
+          }</code>
+          </p>
+          <p><code>.shape-stroke-width {</code>
+            <p><code>fill: lightseagreen;</code></p>
+            <p><code>stroke: teal;</code></p>  
+            <p><code>stroke-width: 5%;</code></p>  
+            <p><code>}</code></p>
+            
+          </p>
+            <div>
+          <a href="index.html">На главную</a>
+          
+         </div>
+        
+</body>
+</html>
