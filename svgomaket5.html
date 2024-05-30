@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обводки</title>
+    <style>svg {
+        border: 1px solid #dddddd;}
+        .shape-opacity{ fill: yellowgreen; }
+        .shape-opacity1 {
+        fill: yellowgreen;
+        fill-opacity: 0.75;
+}
+.shape-stroke1 {
+  fill: lightseagreen;}
+.shape-stroke {
+  fill: lightseagreen;
+  stroke: teal;
+}
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Обводки</h2>
+ <p>
+    Обводки задаются с помощью нескольких атрибутов, причём цвет и толщина обводки задаются отдельно. Цвет задаётся атрибутом <code>stroke</code>:
+    </p>
+    <p><code>&lt;circle r="60" cx="150" cy="50%" fill="none" <span style="background: yellow;">stroke="orange"</span>>&lt;/circle></code>
+    </p>
+    <p>либо через CSS:</p>
+ <p><code>circle {
+    
+  </code><p><span style="background: yellow;">stroke: orange;</span></p><code>}</code></p>
+    
+<p>Результат будет одинаковым, у фигуры появится обводка толщиной один пиксель:</p>
+<img src="5otask.png" alt="">
+
+
+
+<h2>Задачи</h2>
+  <ul>
+    <li>
+        <p>Задайте первой фигуре обводку атрибутом <code>stroke="darkorange"
+        </code>.</p>
+        </li>
+    <li>
+        <p>Задайте второй фигуре обводку через CSS <code>stroke: teal</code>.</p>
+        </li>
+    
+  </ul>
+    <h4>Было</h4>
+    <h4>object.svg</h4>
+    <pre>
+        &lt;svg width="300" height="150">
+        &lt;circle r="60" cx="75" cy="50%" fill="gold">&lt;/circle>
+        &lt;circle class="shape-stroke" r="60" cx="225" cy="50%">&lt;/circle>
+        &lt;/svg>
+    </pre>
+      <h4>style.css</h4>
+      <p><code>svg {
+        border: 1px solid #dddddd;
+      }</code>
+      </p>
+      <p><code>.shape-stroke {
+            fill: lightseagreen;
+          }</code>
+        
+      </p>
+      <svg width="300" height="150">
+
+        <circle r="60" cx="75" cy="50%" fill="gold"></circle>
+      
+        <circle class="shape-stroke1" r="60" cx="225" cy="50%"></circle>
+      
+      </svg>
+      <h4>Надо</h4>
+      <svg width="300" height="150">
+
+        <circle r="60" cx="75" cy="50%" fill="gold" stroke="darkorange"></circle>
+      
+        <circle class="shape-stroke" r="60" cx="225" cy="50%"></circle>
+      
+      </svg>
+
+
+      <h3>Код</h3>
+      <p>
+        <p><code>&lt;svg width="300" height="150"></code></p>
+        <p><code>&lt;circle r="60" cx="75" cy="50%" fill="gold" stroke="darkorange">&lt;/circle></code></p>
+        <p><code>&lt;circle class="shape-stroke" r="60" cx="225" cy="50%">&lt;/circle></code></p>
+        <p><code>&lt;/svg></code></p>
+          </p>
+            <div>
+          <a href="index.html">На главную</a>
+          
+         </div>
+        
+</body>
+</html>

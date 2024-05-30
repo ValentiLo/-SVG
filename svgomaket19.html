@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сдвиг обводки</title>
+    <style>svg {
+        border: 1px solid #dddddd;}
+        .shape-stroke1 {
+  fill: gold;
+  stroke: darkorange;
+}
+.shape-stroke {
+  fill: gold;
+  stroke: darkorange;
+  stroke-width: 100;
+  stroke-dasharray: 20;
+}
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Сдвиг обводки</h2>
+ <p>Пунктирной обводке с помощью атрибута <code>stroke-dashoffset</code> можно задать сдвиг.</p>
+ <p>Возьмём такой пример:</p>
+ <p><code>stroke-dasharray="50"</code></p>
+ <img src="191otask.png" alt="">
+ <p>и добавим<code>stroke-dashoffset</code>:<code>stroke-dasharray="50"</code><code style="background: yellow;">stroke-dashoffset="25"</code></p>
+<img src="192otask.png" alt="">
+<p>Пунктиры обводки сдвинулись на заданный отрезок по направлению против часовой стрелки. Значение <code>stroke-dashoffset</code> может быть отрицательным, и тогда обводка будет смещаться по часовой стрелке.</p>
+ <p>Аналогично работает CSS-свойство <code>stroke-dashoffset</code>.</p>
+<h2>Задачи</h2>
+  <ul>
+    <li>
+        <p>Добавьте последнему кругу атрибут <code>stroke-dashoffset="10"</code> , чтобы выровнять белые линии на спасательном круге
+        </p>
+        </li>
+   
+  </ul>
+    <h4>Было</h4>
+   <!-- <h4>object.svg</h4>
+     -->
+     <svg width="200" height="200">
+
+        <circle r="70" cx="100" cy="100" fill="none" stroke="lightgrey" stroke-width="55"></circle>
+      
+        <circle r="70" cx="100" cy="100" fill="none" stroke="tomato" stroke-width="50"></circle>
+      
+        <circle r="70" cx="100" cy="100" fill="none" stroke="white" stroke-width="50" stroke-dasharray="20 90"></circle>
+      
+      </svg>
+      
+            <h4>Надо</h4>
+            <p>
+                
+                <svg width="200" height="200">
+
+                    <circle r="70" cx="100" cy="100" fill="none" stroke="lightgrey" stroke-width="55"></circle>
+                  
+                    <circle r="70" cx="100" cy="100" fill="none" stroke="tomato" stroke-width="50"></circle>
+                  
+                    <circle r="70" cx="100" cy="100" fill="none" stroke="white" stroke-width="50" stroke-dasharray="20 90" stroke-dashoffset="10"></circle>
+                  
+                  </svg>
+                  
+            </p>
+            
+
+            
+            <h3>Код</h3>
+            <img src="19otask.png" alt="">
+      <!-- <p>
+        <p><code>&lt;svg width="300" height="300"></code></p>
+        <p><code>&lt;line x1="40" y1="50" x2="260" y2="50" stroke-width="50" stroke="tomato" stroke-linecap="butt">&lt;/line></code></p>
+        <p><code>&lt;line x1="40" y1="150" x2="260" y2="150" stroke-width="50" stroke="gold" stroke-linecap="round">&lt;/line></code></p>
+        <p><code>&lt;line class="shape-linecap" x1="40" y1="250" x2="260" y2="250" stroke-width="50" stroke="lightseagreen">&lt;/line></code></p>
+        <p><code>&lt;/svg></code></p>
+          </p>
+          <h3>style.css</h3>
+          <p><code>svg {
+            border: 1px solid #dddddd;
+          }</code>
+          </p>
+          <p><code>.shape-linecap{</code>
+            <p><code> stroke-linecap: square</code></p> 
+            <p><code>}</code></p>
+            
+          </p> -->
+            <div>
+          <a href="index.html">На главную</a>
+          
+         </div>
+        
+</body>
+</html>
