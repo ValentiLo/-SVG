@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пунктирные линии, часть 2</title>
+    <style>svg {
+        border: 1px solid #dddddd;}
+        .shape-stroke1 {
+  fill: gold;
+  stroke: darkorange;
+}
+.shape-stroke {
+  fill: gold;
+  stroke: darkorange;
+  stroke-width: 100;
+  stroke-dasharray: 20;
+}
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Пунктирные линии, часть 2</h2>
+ <p>Видом обводки круглой фигуры тоже можно управлять.</p>
+ <p>В отличие от прямоугольных форм сегменты пунктирной обводки круглой формы могут иметь неравномерную форму в зависимости от толщины обводки.</p>
+ <p>Давайте попробуем создать пунктирную обводку окружности и будем менять толщину, чтобы проследить, как меняется форма сегментов обводки.</p>
+<h2>Задачи</h2>
+  <ul>
+    <li>
+        <p>Задайте фигуре<code>.shape-stroke</code> ширину обводки <span>10</span> и свойство <code>stroke-dasharray</code> со значением <span>10</span>,
+        </p>
+        </li>
+    <li>
+        <p>Измените значение <code>stroke-dasharray</code> на 
+            <code>20</code>.</p>
+        </li>
+        <li>
+            <p>Измените значение ширины обводки на 
+                <code>50</code>.</p>
+            </li>
+  </ul>
+    <h4>Было</h4>
+   <!-- <h4>object.svg</h4>
+     -->
+     <svg width="300" height="300">
+
+        <circle class="shape-stroke1" r="50" cx="50%" cy="50%"></circle>
+      
+      </svg>
+      
+            <h4>Надо</h4>
+            <p>
+                <svg width="300" height="300">
+
+                    <circle class="shape-stroke" r="50" cx="50%" cy="50%"></circle>
+                  
+                  </svg>
+                  
+            </p>
+            .shape-stroke {
+                fill: gold;
+                stroke: darkorange;
+                stroke-width: 100;
+                stroke-dasharray: 20;
+              }
+
+            
+            <h3>Код</h3>
+            <img src="13otask.png" alt="">
+      <!-- <p>
+        <p><code>&lt;svg width="300" height="300"></code></p>
+        <p><code>&lt;line x1="40" y1="50" x2="260" y2="50" stroke-width="50" stroke="tomato" stroke-linecap="butt">&lt;/line></code></p>
+        <p><code>&lt;line x1="40" y1="150" x2="260" y2="150" stroke-width="50" stroke="gold" stroke-linecap="round">&lt;/line></code></p>
+        <p><code>&lt;line class="shape-linecap" x1="40" y1="250" x2="260" y2="250" stroke-width="50" stroke="lightseagreen">&lt;/line></code></p>
+        <p><code>&lt;/svg></code></p>
+          </p>
+          <h3>style.css</h3>
+          <p><code>svg {
+            border: 1px solid #dddddd;
+          }</code>
+          </p>
+          <p><code>.shape-linecap{</code>
+            <p><code> stroke-linecap: square</code></p> 
+            <p><code>}</code></p>
+            
+          </p> -->
+            <div>
+          <a href="index.html">На главную</a>
+          
+         </div>
+        
+</body>
+</html>
