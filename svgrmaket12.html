@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Единицы измерения</title>
+    <style>
+        svg {
+  border: 2px solid teal;
+}
+        
+              a{background: palevioletred; padding: 20px;}
+              div{display: flex;justify-content: space-between;}
+        
+              code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+              span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+              </style>
+</head>
+<body>
+    <h1>Единицы измерения</h1>
+    <p>Для базового использования SVG достаточно представлять как работают внешние размеры, но для создания более сложных конструкций нужно понимать как работают внутренние.</p>
+      <p>В SVG можно использовать разные единицы измерения, например: <span>px</span>, <span>em</span>, <span>ex</span>, <span>pt</span>, <span>pc</span>, <span>cm</span>, <span>mm</span>, <span>in</span> и проценты.</p>
+         <p>Также есть единицы системы координат — <span>user space units</span>, которые по умолчанию соответствуют пикселям, поэтому для размеров и координат в пикселях единицы измерения можно не указывать.</p>
+     <h2>Задачи</h2>
+  <ul>
+    <li>
+        <p>Поэкспериментируйте с толщиной обводки <code>stroke-width</code>: для <code>circle</code> попробуйте задать её в <span>процентах</span>, <span>миллиметрах</span> или <span>em</span>
+        </p>
+        </li>
+   
+  </ul>
+    <h4>Было</h4>
+   <!-- <h4>object.svg</h4>
+     -->
+     <svg viewBox="0 0 250 250" preserveAspectRatio="xMidYMid meet" width="250" height="400">
+        <circle r="100" cx="125" cy="125" fill="gold" stroke="yellowgreen" stroke-width="10"/>
+      </svg>
+    
+            <h4>Надо</h4>
+            <p>1 task</p>
+            <p><svg viewBox="0 0 250 250" preserveAspectRatio="xMidYMid meet" width="250" height="400">
+                <circle r="100" cx="125" cy="125" fill="gold" stroke="yellowgreen" stroke-width="10%"/>
+              </svg></p>
+              
+            
+
+            
+            <h3>Код</h3>
+            <img src="" alt="">
+   
+   <div>
+        <a href="index.html">На главную</a>
+        
+       </div>
+</body>
+</html>
