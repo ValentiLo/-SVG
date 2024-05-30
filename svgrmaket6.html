@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резиновый фон с preserveAspectRatio</title>
+    <style>
+        svg {
+  border: 2px solid teal;
+}
+        
+              a{background: palevioletred; padding: 20px;}
+              div{display: flex;justify-content: space-between;}
+        
+              code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+              span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+              </style>
+</head>
+<body>
+    <h1>Резиновый фон с preserveAspectRatio</h1>
+    <p>SVG, заданный в качестве фона, ведёт себя так же, как инлайновый SVG, поэтому, чтобы получить резиновый фон, используйте SVG с viewBox, но без размеров: в этом случае изображение подгонится под размер элемента, которому задан фон, и будет тянуться вместе с ним, сохраняя пропорции:</p>
+    
+    <img src="6rtask.png" alt="">
+    <p>Это очень удобно для иконок: задайте размеры родительскому элементу, и иконка, заданная фоном, сама под него растянется.</p>
+      <p>Если же нужно, чтобы пропорции не сохранялись, добавьте <code>preserveAspectRatio="none"</code>. Это пригодится для резиновых фонов:</p>
+    <p><img src="61rtask.png" alt=""></p>
+     <h2>Задачи</h2>
+     <p>Блоку <code>.no-viewbox</code> задано фоновое изображение без вьюбокса, и оно не тянется.</p>
+  <ul>
+    <li>
+        <p>Блоку .has-viewbox задайте адрес фоновой картинки <code>has-viewbox.svg</code> и посмотрите как ведёт себя фон с <span>вьюбоксом</span>: изображение заполняет доступное пространство с сохранением своих пропорций.
+        </li>
+     <li>
+        <p>Блоку <code>.has-viewbox-psa-none</code> задайте адрес фоновой картинки<code>has-viewbox-psa-none.svg</code>. Обратите внимание, что теперь фоновое изображение тянется не сохраняя пропорции, фон абсолютно резиновый.</p>
+     </li>
+  </ul>
+    <h4>Было</h4>
+    <p><a href="6.html">here code</a></p>
+   <!-- <h4>object.svg</h4>
+     -->
+     <img src="611rtask.png" alt="">
+     
+
+    
+            <h4>Надо</h4>
+            <p>1 task</p>
+            <img src="612rtask.png" alt="">
+
+            <p>2 task</p>
+            <p>
+                <img src="613rtask.png" alt="">
+            </p>
+            
+
+            
+            <h3>Код</h3>
+            <img src="614rtask.png" alt="">
+   
+   <div>
+        <a href="index.html">На главную</a>
+        
+       </div>
+</body>
+</html>
