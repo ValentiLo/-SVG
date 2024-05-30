@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        svg {
+  border: 2px solid teal;
+}
+        
+              a{background: palevioletred; padding: 20px;}
+              div{display: flex;justify-content: space-between;}
+        
+              code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+              span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+              </style>
+</head>
+<body>
+    <h1>Ширина и высота SVG</h1>
+    <p>SVG ведёт себя иначе, чем привычные HTML-элементы: его содержимое отрисовывается на бесконечном холсте, и его размеры не зависят от содержимого. Видимая часть холста соответствует размерам SVG-элемента, эта область отрисовки называется <strong>вьюпорт</strong>.</p>
+    <p>При этом можно управлять как размерами SVG-элемента, так и поведением его содержимого: оно может отображаться целиком, обрезаться или сжиматься не сохраняя пропорции.</p>
+    <p>Если SVG просто вставить на страницу не указывая размеры, он отобразится размером <span>300×150</span> пикселей:</p>
+    <p><code>&lt;svg></code></p>
+      <p><code>…</code></p>  
+      <p><code>&lt;/svg></code></p>
+    <p><img src="1rtask.png" alt=""></p>
+    <p>Поменять ширину и высоту можно с помощью <code>width</code> и <code>height</code>:</p>
+    <p><code>&lt;svg width="350" height="200">></code></p>
+      <p><code>…</code></p>  
+      <p><code>&lt;/svg></code></p>
+      <p><img src="11rtask.png" alt=""></p>
+      <p>Задавать размеры можно как атрибутами, так и в CSS:</p>
+   <p><span>svg {</span></p>
+   <p><span>width: 350px;</span></p>
+   <p><span>height: 200px;</span></p>
+   <p><span>}</span></p>
+   <p>Для размеров в CSS обязательно указывать единицы измерения. Для размеров в атрибутах, задаваемых в пикселях, единицы измерения не нужны.</p>
+      
+
+
+   <h2>Задачи</h2>
+  <ul>
+    <li>
+        <p>Задайте SVG-элементу ширину <span>320</span> и высоту <span>240</span>.</p>
+        <p>Затем измените ширину и высоту в CSS до <span>500px</span></p>
+        </li>
+   
+  </ul>
+    <h4>Было</h4>
+   <!-- <h4>object.svg</h4>
+     -->
+     <svg>
+        <rect width="100%" height="100%" fill="none" stroke="yellowgreen" />
+        <g fill="orange" stroke="saddlebrown" stroke-width="15">
+          <circle r="23" cx="32" cy="31" />
+          <circle r="23" cx="168" cy="31" />
+        </g>
+        <ellipse fill="saddlebrown" rx="84" ry="70" cx="100" cy="80" />
+        <circle fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="3" r="4" cx="100" cy="135" />
+        <g>
+          <ellipse fill="orange" rx="24" ry="28" cx="77" cy="78" transform="rotate(-30,77,78)" />
+          <ellipse fill="white" rx="14" ry="16" cx="79" cy="83" transform="rotate(-30,79,83)" />
+          <circle fill="black" r="9" cx="82" cy="87" />
+          <circle fill="white" r="3" cx="84" cy="83" />
+        </g>
+        <g>
+          <ellipse fill="orange" rx="24" ry="28" cx="123" cy="78" transform="rotate(30,123,78)" />
+          <ellipse fill="white" rx="14" ry="16" cx="120" cy="83" transform="rotate(30,120,83)" />
+          <circle fill="black" r="9" cx="118" cy="87" />
+          <circle fill="white" r="3" cx="121" cy="83" />
+        </g>
+        <g stroke="#000000" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round">
+          <path d="M55,45 68,42" />
+          <path d="M145,45 135,42" />
+        </g>
+        <g>
+          <ellipse fill="black" rx="25" ry="15" cx="100" cy="107" />
+          <ellipse fill="white" fill-opacity="0.1" rx="17" ry="9" cx="102" cy="103" />
+          <ellipse fill="white" fill-opacity="0.1" rx="8" ry="4" cx="104" cy="100" />
+        </g>
+      </svg>
+      
+            <h4>Надо</h4>
+            <p>
+                
+                <svg width="320" height="240">
+                    <rect width="100%" height="100%" fill="none" stroke="yellowgreen" />
+                    <g fill="orange" stroke="saddlebrown" stroke-width="15">
+                      <circle r="23" cx="32" cy="31" />
+                      <circle r="23" cx="168" cy="31" />
+                    </g>
+                    <ellipse fill="saddlebrown" rx="84" ry="70" cx="100" cy="80" />
+                    <circle fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="3" r="4" cx="100" cy="135" />
+                    <g>
+                      <ellipse fill="orange" rx="24" ry="28" cx="77" cy="78" transform="rotate(-30,77,78)" />
+                      <ellipse fill="white" rx="14" ry="16" cx="79" cy="83" transform="rotate(-30,79,83)" />
+                      <circle fill="black" r="9" cx="82" cy="87" />
+                      <circle fill="white" r="3" cx="84" cy="83" />
+                    </g>
+                    <g>
+                      <ellipse fill="orange" rx="24" ry="28" cx="123" cy="78" transform="rotate(30,123,78)" />
+                      <ellipse fill="white" rx="14" ry="16" cx="120" cy="83" transform="rotate(30,120,83)" />
+                      <circle fill="black" r="9" cx="118" cy="87" />
+                      <circle fill="white" r="3" cx="121" cy="83" />
+                    </g>
+                    <g stroke="#000000" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round">
+                      <path d="M55,45 68,42" />
+                      <path d="M145,45 135,42" />
+                    </g>
+                    <g>
+                      <ellipse fill="black" rx="25" ry="15" cx="100" cy="107" />
+                      <ellipse fill="white" fill-opacity="0.1" rx="17" ry="9" cx="102" cy="103" />
+                      <ellipse fill="white" fill-opacity="0.1" rx="8" ry="4" cx="104" cy="100" />
+                    </g>
+                  </svg>
+                  
+            </p>
+            
+
+            
+            <h3>Код</h3>
+            <img src="111rtask.png" alt="">
+   
+   <div>
+        <a href="index.html">На главную</a>
+        
+       </div>
+</body>
+</html>
