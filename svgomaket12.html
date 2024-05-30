@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пунктирные линии, часть 1</title>
+    <style>svg {
+        border: 1px solid #dddddd;}
+        .shape-dasharray {
+  stroke-dasharray: 5 10 15 20;
+}
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Пунктирные линии, часть 1</h2>
+ <p>В SVG можно управлять видом пунктирных линий, это делается с помощью атрибута <code>stroke-dasharray</code>. В качестве значения задаётся длина отрезков и пробелов между ними. Можно задать одно число, в этом случае получится пунктирная линия, состоящая из отрезков и пробелов одинаковой длины:</p>
+<ol>
+        <li><p><code>stroke-dasharray="15"</code>:</p>
+            <img src="121otask.png" alt=""></li>
+        <li><p>Если задать два числа <code>stroke-dasharray="50 10"</code>, первое будет управлять длиной отрезков, второе — длиной пробелов:</p><img src="122otask.png" alt=""></li>
+        <li><p>Последовательность можно продолжить<code>stroke-dasharray="1 2 3 5 8 13 21"</code>, в этом случае получится пунктирная линия со сложным ритмом:</p>
+            <img src="123otask.png" alt=""></li>
+    <p>Аналогично работает CSS-свойство <code>stroke-dasharray</code>.</p>
+<h2>Задачи</h2>
+  <ul>
+    <li>
+        <p>Задайте первой линии атрибут <code>stroke-dasharray="10"</code>,
+        </p>
+        </li>
+    <li>
+        <p>а второй линии — со значением 
+            <code>50 15</code>.</p>
+        </li>
+        <li>
+            <p>В CSS третьей линии задайте свойство 
+                <code>stroke-dasharray</code>  со значением  <code>5 10 15 20</code>.</p>
+            </li>
+  </ul>
+   <!-- <h4>Было</h4>
+    <h4>object.svg</h4>
+    <pre>
+        &lt;svg width="300" height="300">
+        &lt;line x1="40" y1="50" x2="260" y2="50" stroke-width="50" stroke="tomato" stroke-linecap="butt"> &lt;/line>
+        &lt;line x1="40" y1="150" x2="260" y2="150" stroke-width="50" stroke="gold"> &lt;/line>
+        &lt;line class="shape-linecap" x1="40" y1="250" x2="260" y2="250" stroke-width="50" stroke="lightseagreen"> &lt;/line>
+        &lt;/svg>
+    </pre>
+      <h4>style.css</h4>
+      <p><code>svg {
+        border: 1px solid #dddddd;
+      }</code>
+      </p> -->
+      <svg width="300" height="200">
+
+        <line x1="40" y1="50" x2="260" y2="50" stroke-width="10" stroke="tomato"></line>
+      
+        <line x1="40" y1="100" x2="260" y2="100" stroke-width="20" stroke="gold"></line>
+      
+        <line class="shape-dasharray1" x1="40" y1="150" x2="260" y2="150" stroke-width="20" stroke="lightseagreen"></line>
+      
+      </svg>
+      
+            <h4>Надо</h4>
+            <svg width="300" height="200">
+
+                <line x1="40" y1="50" x2="260" y2="50" stroke-width="10" stroke="tomato" stroke-dasharray="10"></line>
+              
+                <line x1="40" y1="100" x2="260" y2="100" stroke-width="20" stroke="gold" stroke-dasharray="50 15"></line>
+              
+                <line class="shape-dasharray" x1="40" y1="150" x2="260" y2="150" stroke-width="20" stroke="lightseagreen"></line>
+              
+              </svg>
+            <h3>Код</h3>
+      <!-- <p>
+        <p><code>&lt;svg width="300" height="300"></code></p>
+        <p><code>&lt;line x1="40" y1="50" x2="260" y2="50" stroke-width="50" stroke="tomato" stroke-linecap="butt">&lt;/line></code></p>
+        <p><code>&lt;line x1="40" y1="150" x2="260" y2="150" stroke-width="50" stroke="gold" stroke-linecap="round">&lt;/line></code></p>
+        <p><code>&lt;line class="shape-linecap" x1="40" y1="250" x2="260" y2="250" stroke-width="50" stroke="lightseagreen">&lt;/line></code></p>
+        <p><code>&lt;/svg></code></p>
+          </p>
+          <h3>style.css</h3>
+          <p><code>svg {
+            border: 1px solid #dddddd;
+          }</code>
+          </p>
+          <p><code>.shape-linecap{</code>
+            <p><code> stroke-linecap: square</code></p> 
+            <p><code>}</code></p>
+            
+          </p> -->
+            <div>
+          <a href="index.html">На главную</a>
+          
+         </div>
+        
+</body>
+</html>
