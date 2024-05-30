@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спасательный круг, часть 2</title>
+    <style>svg {
+        border: 1px solid #dddddd;}
+        .shape-stroke1 {
+  fill: gold;
+  stroke: darkorange;
+}
+.shape-stroke {
+  fill: gold;
+  stroke: darkorange;
+  stroke-width: 100;
+  stroke-dasharray: 20;
+}
+      a{background: palevioletred; padding: 20px;}
+      div{display: flex;justify-content: space-between;}
+
+      code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 120%;}
+      span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
+      </style>
+</head>
+<body>
+    <h2>Спасательный круг, часть 2</h2>
+ <p>Отлично, первый «слой» объекта готов. Он будет выступать серой рамкой спасательного круга.</p>
+ <p>Давайте теперь создадим второй слой, который будет являться «раскрашенной» частью круга. Обводка этого второго круга будет немного меньше, чем первого.</p>
+<h2>Задачи</h2>
+  <ul>
+    <li>
+        <p>В SVG после первой окружности добавьте вторую с радиусом  <span>70</span> и координатами центра по обеим осям<span>100</span>,
+        </p>
+        </li>
+    <li>
+        <p>уберите заливку окружности и задайте цвет обводки <code>tomato</code>.</p>
+        </li>
+        <li>
+            <p>а затем задайте толщину обводки <span>50</span>.</p>
+            </li>
+  </ul>
+    <h4>Было</h4>
+   <!-- <h4>object.svg</h4>
+     -->
+     <svg width="200" height="200">
+
+        <circle r="70" cx="100" cy="100" fill="none" stroke="lightgrey" stroke-width="55"></circle>
+      
+      </svg>
+            <h4>Надо</h4>
+            <p>
+                <svg width="200" height="200">
+
+                    <circle r="70" cx="100" cy="100" fill="none" stroke="lightgrey" stroke-width="55"></circle>
+                  
+                    <circle r="70" cx="100" cy="100" fill="none" stroke="tomato" stroke-width="50"></circle>
+                  </svg>
+                  
+                  
+            </p>
+            
+
+            
+            <h3>Код</h3>
+            <img src="16otask.png" alt="">
+      <!-- <p>
+        <p><code>&lt;svg width="300" height="300"></code></p>
+        <p><code>&lt;line x1="40" y1="50" x2="260" y2="50" stroke-width="50" stroke="tomato" stroke-linecap="butt">&lt;/line></code></p>
+        <p><code>&lt;line x1="40" y1="150" x2="260" y2="150" stroke-width="50" stroke="gold" stroke-linecap="round">&lt;/line></code></p>
+        <p><code>&lt;line class="shape-linecap" x1="40" y1="250" x2="260" y2="250" stroke-width="50" stroke="lightseagreen">&lt;/line></code></p>
+        <p><code>&lt;/svg></code></p>
+          </p>
+          <h3>style.css</h3>
+          <p><code>svg {
+            border: 1px solid #dddddd;
+          }</code>
+          </p>
+          <p><code>.shape-linecap{</code>
+            <p><code> stroke-linecap: square</code></p> 
+            <p><code>}</code></p>
+            
+          </p> -->
+            <div>
+          <a href="index.html">На главную</a>
+          
+         </div>
+        
+</body>
+</html>
